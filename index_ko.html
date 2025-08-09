@@ -1,133 +1,84 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title>Web Entertainment Design</title>
-    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>ハングル商店</title>
+  <meta name="description" content="子供向け歯ブラシとハングル学習製品">
+  <meta name="viewport" content="width=device-width, initial-scale=1 ,viewport-fit=cover">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  <body>
-    <header id="header">
-      <div class="inner wrapper">
-        <h1 class="logo">
-          <a href="index.html"><img src="Mask_group.png" alt="Web Entertainment Design"></a>
-        </h1>
-        <nav>
-          <div class="lang-switcher">
-            <a href="index.html">日本語</a> |
-            <a href="index_en.html">English</a> |
-            <a href="index_ko.html">한국어</a>
-          </div>
-          <ul>
-            <li><a href="#product">PRODUCT</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#business">DOCUMENT</a></li>
-            <li><a href="#company">ACCESS</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<body>
+  <!-- ヘッダー -->
+  <header id="header">
+    <div class="inner wrapper">
+      <!-- <h1 class="logo">
+        <a href="#"><img src="product.png" alt="アイワカッチ"></a>
+      </h1> -->
+      <nav class="lang-switcher">
+        <a href="index_en.html">English</a> |
+        <a href="index_ko.html">한국어</a> |
+        <a href="index.html">日本語</a>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-      <section id="product" class="wrapper">
-        <div class="text">
-          <h2 class="section-title">
-            <span class="en">PRODUCT</span>
-            <span class="ja">製品</span>
-          </h2>
-          <p>子供（3歳から5歳）を対象にしている歯ブラシです。喉付き防止のストッパーがついていて安全になっています。</p>
-        </div>
+  <!-- メインビジュアル -->
+  <div id="mainvisual">
+    <img src="main.png" alt="歯ブラシの画像">
+  </div>
+<h1 class="logo">
+        <a href="#"><img src="product.png" alt="アイワカッチ"></a>
+      </h1>
+  <!-- 01セクション -->
+  <section class="wrapper section-card">
+    <div class="section-image">
+      <img src="child.png" alt="子供の歯磨き">
+    </div>
+    <div class="section-text">
+      <div class="section-number">01</div>
+      <div class="section-title-bar">혼자 즐거운 치약 데뷔</div>
+      <p>
+        「아이와 같이」는, 즐겁게 배우면서 부모와 자식 연마에서 혼자 연마로의 이행을 부드럽게 서포트합니다. 올바른 닦는 방법을 놀이 감각으로 익히면 자녀의 자신감이 길러집니다. 성취감이 넘치는 미소가 매일의 양치질을 즐거움으로 바꾸어 줄 것입니다. 부모와 자식의 커뮤니케이션을 심화시키면서, 자녀의 자립심을 기르는 한 걸음을, 「아이와 같이」로 시작해 보지 않겠습니까.
+      </p>
+    </div>
+  </section>
 
-        <div class="img">
-          <img src="product.png" alt="製品画像" id="mainImage">
-        </div>
+  <!-- 02セクション -->
+  <section class="wrapper section-card">
+    <div class="section-image">
+      <img src="hanguel.png" alt="ハングル教材の写真">
+    </div>
+    <div class="section-text">
+      <div class="section-number">02</div>
+      <div class="section-title-bar">한글을 재미있게 배우자!</div>
+      <p>
+        문자에 대한 흥미를 높이고 배움의 일환으로 즐겁게 사용할 수 있습니다. 글자와 양치질을 연결함으로써 일상생활 속에서 한글 습득을 돕고 자녀의 성장을 응원합니다.
+      </p>
+    </div>
+    
+  </section>
 
-        <ul id="thumbnail">
-          <li><img src="product2.png" alt="サムネイル1"></li>
-          <li><img src="company.png" alt="サムネイル2"></li>
-          <li><img src="access.png" alt="サムネイル3"></li>
-          <li><img src="about.png" alt="サムネイル4"></li>
-          <li><img src="rogo.png" alt="サムネイル5"></li>
-        </ul>
-      </section>
+  <!-- 店舗情報 -->
+  <section id="company" class="wrapper">
+    <div class="img">
+      <img src="map.png" alt="地図画像">
+    </div>
+    <div class="text">
+         <img src="map_icon.png" alt="地図画像"><h2 class="section-title">점포 정보</h2>
+      <dl class="info">
+        <dt>주소</dt>
+        <dd>세종 어울누리로 67</dd>
+      </dl>
+      <a href="#" class="btn">인스타그램</a>
+    </div>
+  </section>
 
-      <section id="about">
-        <div class="img">
-          <img src="access.png" alt="私たちについて画像">
-        </div>
-
-        <div class="text">
-          <h2 class="section-title">
-            <span class="en">ABOUT</span>
-            <span class="ja">私たちについて</span>
-          </h2>
-          <p>
-            女性3人、男性3人／猫好き3人、犬好き3人／A型3人、B型3人／日本人3人、韓国人3人。すべてが50対50に分かれている私たちのチームは「オゴンオゴン（50/50）」です。オゴンオゴンは、合わせて100になるチームを目指しています。
-          </p>
-        </div>
-      </section>
-
-      <section id="business" class="wrapper">
-        <h2 class="section-title">
-          <span class="en">DOCUMENT</span>
-          <span class="ja">資料</span>
-        </h2>
-        <iframe 
-          src="2025.pdf"
-          width="100%" 
-          height="600px" 
-          style="border: none;">
-        </iframe>
-      </section>
-
-      <section id="company" class="wrapper">
-        <div class="text">
-          <h2 class="section-title">
-            <span class="en">ACCESS</span>
-            <span class="ja">アクセス</span>
-          </h2>
-
-          <dl class="info">
-            <dt>会社名</dt>
-            <dd>ハングル商店</dd>
-            <dt>所在地</dt>
-            <dd>世宗市オウルヌリ路67　1F</dd>
-            <dt>営業日</dt>
-            <dd>火曜‐土曜　12時~20時</dd>
-            <dt>休業日</dt>
-            <dd>祝日及び日曜日、月曜日</dd>
-          </dl>
-        </div>
-
-        <div class="img">
-          <img src="access.png" alt="地図画像">
-        </div>
-      </section>
-    </main>
-
-    <footer id="footer">
-      <div class="wrapper">
-        <div class="flex">
-          <div class="logo">
-            <img src="rogo.png" alt="Web Entertainment Design">
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- jQueryと画像切り替えスクリプト -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-      $(function () {
-        $('#thumbnail img').hover(function () {
-          const newSrc = $(this).attr('src');
-          $('#mainImage').attr('src', newSrc);
-        });
-      });
-    </script>
-  </body>
+  <!-- フッター -->
+  <footer id="footer">
+    <div class="wrapper">
+      <p>오공오공</p>
+    </div>
+  </footer>
+</body>
 </html>
