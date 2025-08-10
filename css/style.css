@@ -145,7 +145,7 @@ li {
   position: relative;
   z-index: 1;
   margin-right: 40px; /* 右側に余白を60px確保 */
-  margin-left: auto; /* 右寄せ */
+  margin-left: 5px; /* 右寄せ */
   border-radius: 8px;
 }
 
@@ -163,7 +163,7 @@ li {
   padding: 16px;
   margin-top: -20px; /* 写真の下から40px上に被せる */
   margin-left: 20px; /* 左側に余白 */
-
+  margin-right: 5px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
