@@ -158,12 +158,28 @@ li {
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 24px;
+  text-align: center;
+}
+#company .section-title {
+  margin-bottom: 16px;
+}
+
+.map-frame {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 12px;
+  margin-bottom: 16px;
 }
 #company .info dt {
   color: #5C9B82;
   font-weight: bold;
-  margin-top: 8px;
+  margin-top: 0;
 }
+#company .info dd {
+  margin: 0 0 16px 0;
+}
+
 .btn {
   background-color: #5C9B82;
   color: #fff;
@@ -171,7 +187,9 @@ li {
   border-radius: 20px;
   display: inline-block;
   font-size: 0.9rem;
-  margin-top: 8px;
+  text-decoration: none;
+  display: inline-block;
+  /* margin-top: 8px; */
 }
 
 /*----------------------------------------
