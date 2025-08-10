@@ -8,7 +8,7 @@ html {
 }
 body {
   background-color: #FFFDF5;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Zen Maru Gothi', sans-serif;
   font-size: 1rem;
   line-height: 1.8;
   color: #333;
@@ -73,30 +73,19 @@ li {
   }
 
   .lang-switcher {
-    position: absolute;
-    top: 48px;     /* 写真の上からの距離 */
-    right: 40px;   /* 写真の右からの距離 */
-    z-index: 2;   /* 写真より上に表示 */
-    background: rgba(255, 255, 255, 0.8); /* 半透明で背景色 */
-    border-radius: 12px;
-    padding: 4px 10px;
-    font-size: 14px;
-  }
-}
-/* .lang-switcher a {
-  background: #fff;
+  position: absolute;
+  top: 48px;
+  right: 40px;
+  z-index: 2;
+  background: #FFFDF5(255, 255, 255, 0.8);
   border-radius: 12px;
   padding: 4px 10px;
-  margin: 0 3px;
-  color: #333;
-}
-.lang-switcher a.active {
-  background: #F47E6B;  /* オレンジ系 */
-  /* color: #fff;          /* 白文字 */
-  /* font-weight: bold;
-  text-shadow: 0 0 3px rgba(0,0,0,0.3); 少し影をつけて見やすく */
-/* }  */
+  font-size: 14px;
 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* 影を追加 */
+}
+
+}
 .lang-switcher a {
   background: transparent;
   border-radius: 12px;
@@ -123,13 +112,7 @@ li {
 /*----------------------------------------
   Section card
 ----------------------------------------*/
-.section-card {
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 24px;
-}
+
 .section-number {
   font-size: 2rem;
   font-weight: bold;
@@ -150,6 +133,58 @@ li {
   margin-bottom: 12px;
 }
 
+.section-card {
+  position: relative;
+  max-width: 400px; /* 固定幅に調整 */
+  margin: 0 auto 32px; /* 中央寄せと下マージン */
+  background-color: #FFFDF5;
+  padding: 0;
+} 
+
+.section-card .section-image {
+  position: relative;
+  z-index: 1;
+  margin-right: 40px; /* 右側に余白を60px確保 */
+  margin-left: auto; /* 右寄せ */
+  border-radius: 8px;
+}
+
+.section-card .section-image img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.section-card .section-text {
+  position: relative;
+  background-color: #ffff;
+  border: 1.5px solid #DFDBAE;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: -20px; /* 写真の下から40px上に被せる */
+  margin-left: 20px; /* 左側に余白 */
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 必要なら写真の下に影をつけて浮いて見えるように */
+.section-card .section-image {
+  position: relative;
+  z-index: 1;
+}
+
+/* セクション番号の位置微調整（必要なら） */
+.section-card .section-number {
+  position: absolute;
+  top: -45px;
+  right: 0px;
+  font-size: 4rem;
+  color: #F47E6B;
+  font-weight: bold;
+  z-index: 1;
+   -webkit-text-stroke: 2px #fff; 
+}
+
 /*----------------------------------------
   店舗情報
 ----------------------------------------*/
@@ -160,8 +195,25 @@ li {
   margin-bottom: 24px;
   text-align: center;
 }
+#company h1 {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: #5C9B82;
+　font: size 15px;
+  margin-bottom: 3px; /* お好みで余白調整 */
+  font-weight: bold;
+  text-align: center;  /* 中央揃えに */
+}
+
 #company .section-title {
+  font-family: 'Zen Maru Gothic', sans-serif;  /* 好みのフォントに変更 */
+  color: #5C9B82;  /* 好みの色に変更（ここは緑系の例） */
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 8px; /* アイコンと文字の間の隙間 */
   margin-bottom: 16px;
+  font-weight: bold;
 }
 
 .map-frame {
@@ -171,14 +223,29 @@ li {
   border-radius: 12px;
   margin-bottom: 16px;
 }
-#company .info dt {
-  color: #5C9B82;
-  font-weight: bold;
-  margin-top: 0;
+#company .info {
+  display: flex;
+  justify-content: center; /* 中央揃え */
+  gap: 8px;                /* dtとddの間の隙間 */
+  margin-bottom: 16px;
 }
+
+#company .info dt {
+  color: #5C9B82;  /* 緑色 */
+  font-weight: bold;
+  margin: 0;
+}
+
 #company .info dd {
+  color: #000000;  /* 黒色 */
   margin: 0 0 16px 0;
 }
+.section-icon {
+  width: 28px;  /* 好みの大きさに */
+  height: 35px;
+  object-fit: contain;
+}
+
 
 .btn {
   background-color: #5C9B82;
