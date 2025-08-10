@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>子供用歯ブラシ</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/lang.js" defer></script>
+</head>
+<body>
+
+  <div class="lang-btns">
+    <button onclick="setLanguage('ja')">日本語</button>
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('ko')">한국어</button>
+  </div>
+
+  <h1 id="product-name"></h1>
+  <!-- <img src="images/brush.jpg" alt="歯ブラシ"> -->
+  <p id="description"></p>
+  <h2 id="features-title"></h2>
+  <ul id="features-list"></ul>
+
+  <a href="index.html">TOP</a>
+
+   <script>
+    const content = {
+      ja: {
+        name: "のどストッパー付き 子供用歯ブラシ",
+        description: "子供の安全を考えて設計された、ハングル付きのかわいい歯ブラシ。",
+        featuresTitle: "特徴",
+        features: ["対象年齢：3〜7歳", "のどストッパー付き", "ハングルで学べる"]
+      },
+      en: {
+        name: "Child-Safe Toothbrush",
+        description: "Cute toothbrush with safety features and Korean characters for learning.",
+        featuresTitle: "Features",
+        features: ["Ages 3–7", "Throat stopper", "Learn Korean"]
+      },
+      ko: {
+        name: "아동용 칫솔",
+        description: "한글 학습 기능이 포함된 안전한 칫솔입니다.",
+        featuresTitle: "특징",
+        features: ["3~7세", "목 보호 장치", "한글 학습"]
+      }
+    };
+    setLanguage("ja");
+  </script>
+
+</body>
+</html>
